@@ -1,0 +1,204 @@
+body {
+    background:#DCDCDC;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    font-size: 1rem;
+    font-family: sans-serif;
+    padding-bottom: 3em;
+    margin: 0px;
+    padding: 0px;
+    width: 99%;
+height: auto;
+  }
+  .header {
+      width: 100%;
+      margin: 0px;
+      padding: 8px;
+      background-color: gray;
+     font-size: 25px;
+      text-align: start;
+
+
+  }
+  .image{
+      width: 40%;
+      height: 65px;
+      margin: 0.5% auto;
+      /* border:2px solid black; */
+
+  }
+  .image img {
+      width: 55%;
+      height: auto;
+  }
+  h3 {
+      color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .controls__input{
+    width: 80%;
+    height: 25px;
+    margin-left: 0%;
+    margin-top: 0px; 
+    /* background: none; */
+    border-radius: 7px;
+    border: 1px solid #31abe4;
+    font-size: 18px;
+
+  }
+   .controls__input:focus {
+    border: 2px solid #31abe4;
+    background:white;
+  }
+  .butt {
+    background-color: #00b5cc;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 6px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 21px;
+    margin: 1% auto;
+    width: 35%;
+      
+  }
+  .butt:hover {
+      background:#32CD32;
+      transition: 1s;
+  }
+  .sava {
+      width: 35%;
+  }
+  .page-wrap {
+    display: inline-block;
+    margin: 0% auto;
+    /* border: 2px solid black; */
+  }
+  .controls {
+    &__input {
+      display: block;
+      margin: 10 auto;
+      background: none;
+      border: none;
+      font-size: 1em;
+      padding-bottom: .5em;
+      border-bottom: 2px solid #ccc;
+      text-align: center;
+      outline: none;
+      color: #fff;
+    }
+    &__btn {
+      background: dodgerblue;
+      color: #fff;
+      border: none;
+      font-size: 1em;
+    }
+    &__label {
+       display: block;
+      font-size: .8em;
+      padding-top: .3em;
+      margin-bottom: 2em;
+    }
+  }
+  canvas {
+    background-color: #eee;
+    /* border: 2px solid black; */
+    display: none;
+     // opacity: 0; 
+    transition: opacity .0s;
+    &.show {
+      opacity: 0;
+    }
+    
+  }
+  .canvas-wrap {
+    margin-top: 50px;
+    position: relative;
+    
+  }
+  #canvasID {
+    z-index: 9999;
+    
+  }
+  .footer  {
+    width: 100%;
+    margin-top: 1%;
+    padding: 8px;
+    /* background-color: gray;  */
+   font-size: 16px;
+    text-align: center; 
+    color:darkgray;
+    font-weight: bold;
+  }
+
+
+  @media(max-width:530px) {
+    body {
+        background:#DCDCDC;
+        color: #fff;
+        position: relative;
+        text-align: center;
+        font-size: 1rem;
+        font-family: sans-serif;
+        padding-bottom: 3em;
+        margin: 0px;
+        padding: 0px;
+        width: 99%;
+    height: auto;
+      }
+      .header {
+        width: 100%;
+        margin: 0px;
+        padding: 8px;
+        background-color: gray;
+       font-size: 20px;
+        text-align: start;
+  
+  
+    }
+    .image{
+        width: 80%;
+        height: 80px;
+        margin: 0.5% auto;
+        /* border:2px solid black; */
+  
+    }
+    .image img {
+        width: 75%;
+        height: auto;
+    }
+
+    .controls__input{
+        width: 65%;
+        height: 20px;
+        margin-left: 0%;
+        margin-top: 0px; 
+        /* background: none; */
+        border-radius: 7px;
+        border: 1px solid #31abe4;
+        font-size: 18px;
+    
+      }
+      .sava {
+        width: 35%;
+    }
+    canvas {
+        width: 100%; 
+        height:443px;
+    }
+
+    .footer  {
+        width: 100%;
+        margin-top: 1%;
+        padding: 5px;
+        /* background-color: gray;  */
+       font-size: 16px;
+        text-align: center; 
+        color:darkgray;
+        font-weight: bold;
+        height: auto;
+      }
+  }

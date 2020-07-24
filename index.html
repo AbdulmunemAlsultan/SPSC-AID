@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="header">
+   SPSC
+    </div>
+    <div class="image">
+<img src="logo.png">
+    </div>
+
+    <h3>
+        يقدم لكم مركزنا خدمة بطاقة المعايدة بمناسبة عيد الاضحى المبارك. فضلا ادخل اسمك ليتم إضافة على البطاقة
+    </h3>
+<!-- <h1>Overlay text on canvas image and save as base64</h1> -->
+<div class="page-wrap">
+    
+  <div class="controls">
+    <input class="controls__input"  id="imageLoader" name="imageLoader" style="visibility: hidden;"/>
+    <!-- <label class="controls__label" for="name">First, choose an image.</label> -->
+    
+    <input class="controls__input" id="name" type="text" value="" required/>
+    <button class="butt" id="show-can">عرض البطاقة</button>
+    <!-- <label class="controls__label" for="name">Overlay Text</label> -->
+  </div>
+  <div id="canvas-wrap">
+     <canvas  id="imageCanvas" width=540px height=443px>
+    
+        <canvas id="canvasID">
+      
+        </canvas>
+        
+    </canvas>
+    <a id="download" download="image.png">
+    <button style="display: none;" id="but-download" class="butt sava" onClick="download();">حفظ</button>
+   </a>
+  </div>
+  
+  
+</div>
+<div class="footer">
+  IT-Abdulmunem Alsultan &copy; SPSC
+     </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html> 
+
+
+
+
