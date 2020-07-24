@@ -37,7 +37,7 @@ function DrawOverlay(img) {
 function DrawText() {
     ctx.fillStyle = "#31abe4";
     ctx.textBaseline = 'middle';
-    ctx.font = "22px 'Amiri', serif";
+    ctx.font = "22px 'Almarai', sans-serif";
     ctx.fillText(text_title, 320, 320);
 }
 function DynamicText(img) {
