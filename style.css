@@ -182,7 +182,8 @@ height: auto;
         border-radius: 7px;
         border: 1px solid #31abe4;
         font-size: 18px;
-    
+          text-align: center;
+             
       }
       .butt {
     background-color: #00b5cc;
