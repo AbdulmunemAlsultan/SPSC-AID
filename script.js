@@ -9,7 +9,7 @@ $(document).ready(function(){
 
   });
 
-var text_title = "text";
+var text_title = "";
 var imageLoader = document.getElementById('imageLoader');
 imageLoader.addEventListener('change', handleImage, false);
 var canvas = document.getElementById('imageCanvas');
