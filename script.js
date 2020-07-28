@@ -1,10 +1,8 @@
 $(document).ready(function(){
 
     $("#show-can").click(function(){
-        // var space  = document.getElementById("name").value;
-        // console.log(space+'');
-	$("#imageCanvas").css('visibility','visible');
-        $("#imageCanvas").slideDown(1200);
+        $("#imageCanvas").css('visibility','visible');
+        $("#imageCanvas").slideDown(2000);
         $("#but-download").slideDown(1200);
       });
 
@@ -17,7 +15,6 @@ var canvas = document.getElementById('imageCanvas');
 var ctx = canvas.getContext('2d');
 var img = new Image();
 img.crossOrigin="anonymous";
-// img.crossOrigin="image.jpg";
 
 window.addEventListener('load', DrawPlaceholder)
 
@@ -27,7 +24,6 @@ window.addEventListener('load', DrawPlaceholder)
          DrawText();
          DynamicText(img)
    };
-     //  img.src = 'https://unsplash.it/400/400/?random';
 img.src = 'https://raw.githubusercontent.com/AbdulmunemAlsultan/LabWebsite/master/img/final.jpg';
 }
 function DrawOverlay(img) {
@@ -38,7 +34,7 @@ function DrawOverlay(img) {
 function DrawText() {
     ctx.fillStyle = "#31abe4";
     ctx.textBaseline = 'middle';
-    ctx.font = "22px 'Almarai', sans-serif";
+    ctx.font = "22px 'Amiri', serif";
     ctx.fillText(text_title, 320, 320);
 }
 function DynamicText(img) {
@@ -49,9 +45,6 @@ function DynamicText(img) {
      ctx.fillText(text_title, 320, 320);  
      console.log(text_title);
      DrawText(); 
-     
-    
-
 });
 }
 function handleImage(e) {
@@ -80,16 +73,13 @@ function handleImage(e) {
 }
 
 function convertToImage() {
-	window.open(canvas.toDataURL('png'));
+	window.open(canvas.toDataURL('jpg'));
 }
-// document.getElementById('download').onclick = function download(){
-// 		convertToImage();
-// }
 
 function download(){
     var download = document.getElementById("download");
-    var image = document.getElementById("imageCanvas").toDataURL("png")
-        .replace("image/png", "image/octet-stream");
+    var image = document.getElementById("imageCanvas").toDataURL("jpg")
+        .replace("image/jpg", "image/octet-stream");
     download.setAttribute("href", image);
-    //download.setAttribute("download","archive.png");
     }
+
