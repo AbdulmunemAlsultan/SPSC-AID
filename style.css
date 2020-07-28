@@ -205,8 +205,9 @@ height: auto;
         width: 35%;
     }
     canvas {
-        width: 100%; 
+            width: 98%; 
         height:443px;
+        margin: 2%
     }
 
      .footer  {
