@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("#show-can").click(function(){
         // var space  = document.getElementById("name").value;
         // console.log(space+'');
-	     $("#imageCanvas").css('visibility','visible');
+	$("#imageCanvas").css('visibility','visible');
         $("#imageCanvas").slideDown(1200);
         $("#but-download").slideDown(1200);
       });
